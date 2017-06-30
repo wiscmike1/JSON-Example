@@ -1,0 +1,201 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none; }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+  }
+
+/* Prevents iPhone from resizing in landscape mode  */
+html {
+  -webkit-text-size-adjust: none; }
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* BODY  */
+body {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: darkgray;
+  background-color: #fff; }
+
+div#wrapper {
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(#f3f6f9 0%, #d1ddeb 100%); }
+
+/* HEADER  */
+header {
+  background-color: lightslategray;
+  padding: .5rem 0 .5rem 2%; }
+
+header h1, header h2 {
+  color: white; }
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 700; }
+
+header h2 {
+  font-size: .75rem;
+  font-weight: 400;
+  padding-top: .2rem; }
+
+header figure {
+  float: right;
+  width: 50px;
+  padding-right: 2%;
+  margin-top: -.25em;
+}
+
+header figure img {
+    width: inherit; 
+}
+
+div#controlsdiv {
+    background-color: lightgray;
+    padding: 10px 2%;
+    color: black;
+}
+  div input {
+      border: 1px solid #fff;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.5); 
+      display: block;
+}
+  div button {
+      border: 1px solid #fff;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, white 60%, rgba(255, 255, 255, 0.6) 100%);
+      border-radius: 5px;
+      padding: 1px 10px;
+      margin-left: 4%; 
+      display: block;     
+}
+
+label {
+    clear:left;
+    text-align:right;
+    padding-left:10px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    font-style: normal;
+}
+
+input, label {
+    float:left;
+}
+
+div#buttondiv {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,td {
+    padding: 1px 5px;
+    background: lightgray;
+    color: black
+}
+
+th {
+    font-weight: bold;
+}
+
+/* allows responsive resizing to different devices */
+@media only screen and (max-width: 480px) {
+    table {
+        width:95%;
+    }
+    input[type=text], textarea {
+        width:75%;
+    }
+}
+
+/*  FOOTER  */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  background-color: #1a9835;
+  color: #fff;
+  font-size: .9rem; }
+
+/* OTHER */
+div.keepOpen {
+  clear: both; }
+
+@media only screen and (min-width: 480px) {
+  #left, #right {
+    float: left;
+    width: 50%; } }
+@media only screen and (min-width: 800px) {
+  div#wrapper {
+    max-width: 800px;
+    margin: 3rem auto 0 auto;
+    border: 1px solid #666;
+    height: auto;
+    box-shadow: 5px 5px 10px #999; }
+
+  footer {
+    clear: both;
+    position: relative; } }
+
+/*# sourceMappingURL=styles.css.map */
